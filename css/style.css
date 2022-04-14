@@ -1,0 +1,171 @@
+html{
+    font-size: 100%;
+}
+:root{
+    --btn-orange: #F1885A;
+    --text-blue: #000D5A;
+    --skills-blue: linear-gradient(137.96deg, #3437CF -7.87%, #000C58 99.1%);
+    --text-white: #DFDFDF;
+    --background:  #E5E5E5;
+
+
+}
+body{
+    background-color: var(--background);
+}
+/* main grid container */
+
+
+/* Navbar */
+nav{
+    width: 100vw;
+    grid-area: 'nav';
+    height: 70px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    top: 0%;
+    right: 0;
+    left: 0;
+}
+#nav-bar{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100%;
+    list-style: none;
+    margin-right: 3rem;
+}
+#blog-dropdown{
+    list-style: none;
+    line-height: 22px;
+}
+.nav-link{
+    margin-right: 20px;
+    margin-left: 20px;
+    color: var(--text-white);
+    line-height: 30px;
+}
+.nav-link:hover{
+    border-bottom: 5px solid var(--btn-orange);
+}
+.nav-anchor{
+    text-decoration: none;
+    color: var(--text-white);
+}
+#nav-anchor:visited{
+    color: var(--text-white);
+}
+
+/* Banner */
+#banner{
+    
+    position: absolute;
+    width: 100vw;
+    max-height: 900px;
+    left: -0.27px;
+    top: 0px;
+    
+   
+}
+
+#headshot-wrapper{
+    grid-area: headshot;
+    height: 623px;
+    width: 100vw;
+    position: relative;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headshot{
+    aspect-ratio: 3/2;
+    grid-area: headshot;
+    max-width: 1000px;
+    max-height: 622px;
+    position: absolute;
+    grid-area: 'headshot';
+    margin-top: 15px;
+    transform: translateY(-50px);
+}
+
+#slogan-contact{
+    grid-area: top-right;
+}
+#slogan-txt{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;    font-weight: 900;
+}
+svg{
+    position: absolute;
+    z-index: -1;
+}
+#banner::before{
+    content: url(/images/background.svg);
+    position: absolute;
+    z-index: -1;
+}
+
+.container {  display: grid;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    justify-items: stretch;
+  }
+  
+  .banner {  display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr 1.1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav nav nav"
+      "logo logo slogan slogan";
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .nav { grid-area: nav; }
+  
+  .slogan { grid-area: slogan; }
+  
+  .logo { grid-area: logo; }
+  
+  .headshot { grid-area: 2 / 1 / 3 / 2; }
+  
+  .skill {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "skills bio"
+      "skills bio";
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  .skills { grid-area: skills; }
+  
+  .bio { grid-area: bio; }
+  
+  .footer {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "copyright form"
+      "copyright form";
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  
+  .copyright { grid-area: copyright; }
+  
+  .form { grid-area: form; }
+  
