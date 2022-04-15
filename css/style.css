@@ -23,7 +23,8 @@ body{
 }
 
 #banner::before{
-    content: url(/images/background.svg);
+    content: url(/images/3-div.svg);
+    display: block;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -33,8 +34,9 @@ body{
 }
 #banner{
 max-height: 540px;
-min-height: 300px;
+min-height: 958px;
 margin-bottom: 290px;
+background: linear-gradient(120.05deg, #243AC0 9.39%, #000421 68.32%);
 }
 #headshot{
 max-width: 1000px;
@@ -76,10 +78,12 @@ filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.394));
     left: 82.02px;
     top: 1331.45px;
 }
-#wave::before{
+/* #wave::before{
     content: url(/images/wave.svg);
     position: absolute;
-}
+    left: 224.69px;
+    top: 1429.37px;
+} */
 .skill-box{
     background: linear-gradient(137.96deg, #3437CF -7.87%, #000C58 99.1%);
     max-width: 125px;
@@ -88,7 +92,92 @@ filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.394));
     
 
 }
+#top{
+     position: absolute;
+     top: -118px;
+    z-index: -1;
+    left: -17px;
+}
+
+#left-side{
+position: absolute;
+left: -123px;
+z-index: -1;
+top: -49px;
+
+}
+#top-bg{
+    position: absolute;
+    top: -116px;
+    z-index: -1;
+    left: -29px;
+}
 
 .skill-box p{
     margin: auto;
+}
+.box-showddow{
+    box-shadow: 0px 4px 32px rgba(179, 179, 179, 0.25);
+border-radius: 37px;
+
+}
+
+#skills-wrapper{
+    box-shadow: 0px 4px 32px rgba(179, 179, 179, 0.25);
+    margin-right: 70px;
+    border-radius: 37px;
+    max-width: 446px;
+    min-width: 367px;
+    max-height: 335px;
+    min-height: 211px;
+}
+#skill-box{
+    margin: 25px 25px;
+    margin-left: 25px;
+    height: 64px;
+    width: auto;
+    background: linear-gradient(137.96deg, #3437CF -7.87%, #000C58 99.1%);
+box-shadow: 17.01px 2.52px 38.43px rgba(0, 0, 0, 0.25);
+border-radius: 3.15px;
+padding: 18px;
+}
+
+footer::before{
+content: url(/images/Rectangle\ 16.png);
+position: absolute;
+z-index: -4;
+}
+
+#socials{
+    max-height: 1109px;
+    min-height: 839px;
+}
+
+#socials::before{
+    content: url(/images/logo-removebg-preview\ 3.svg);
+    position: absolute;
+    max-height: 1109px;
+    min-height: 839px;
+    z-index: -2;
+
+}
+form{
+border-radius: 35px;
+height: 771px;
+width: 609px;
+
+}
+#form-wrapper{
+    border-radius: 35px;
+}
+
+#form-wrapper::before{
+    content: url(/images/Rectangle\ 17.svg);
+    background: rgba(77, 95, 205, 0.32);border-radius: 35px;
+position: absolute;
+width: 804.54px;
+height: 813.44px;
+left: 0;
+top: 0;
+z-index: -1;
 }
