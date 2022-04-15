@@ -9,13 +9,86 @@ html{
     --background:  #E5E5E5;
 
 
+
 }
 body{
     background-color: var(--background);
 }
 /* main grid container */
-
+.nav-item:hover{
+    border-bottom: 5px solid var(--btn-orange);
+}
+.nav-item{
+    line-height: 25px;
+}
 
 #banner::before{
     content: url(/images/background.svg);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 630px;
+    background-size: contain;
+}
+#banner{
+max-height: 540px;
+min-height: 300px;
+margin-bottom: 290px;
+}
+#headshot{
+max-width: 1000px;
+max-height: 622px;
+border-radius: 9px;
+filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.394));
+
+
+}
+.grayscale{
+    filter: grayscale(70%);
+}
+#headshot-wrap{
+    margin-top: 20px;
+    margin-bottom: 3rem;
+}
+
+#slogan{
+    font-size: 48px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 800;
+}
+
+#logo, #slogan{
+    margin-bottom: 50px !IMPORTANT;
+    margin-bottom: 111px;
+    min-height: 300px;
+    object-position: center;
+    aspect-ratio: 4/2;
+}
+
+#mid-section::before{
+    content: url(/images/mid-bg.svg);
+    position: absolute;
+    position: absolute;
+    width: 1251.94px;
+    height: 900.5px;
+    left: 82.02px;
+    top: 1331.45px;
+}
+#wave::before{
+    content: url(/images/wave.svg);
+    position: absolute;
+}
+.skill-box{
+    background: linear-gradient(137.96deg, #3437CF -7.87%, #000C58 99.1%);
+    max-width: 125px;
+    font-size: 20px;
+    margin-right: 15px;
+    
+
+}
+
+.skill-box p{
+    margin: auto;
 }
