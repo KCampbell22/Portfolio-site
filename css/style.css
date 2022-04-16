@@ -25,10 +25,10 @@ body{
 /* baner */
 
 #banner{
-min-height: 700px;
+min-height: 630px;
 max-height: 958px;
 min-width: 375px;
-margin-bottom: 290px;
+
 background: linear-gradient(120.05deg, #243AC0 9.39%, #000421 68.32%);
 }
 
@@ -36,6 +36,7 @@ background: linear-gradient(120.05deg, #243AC0 9.39%, #000421 68.32%);
 
 #headshot{
 max-width: 1000px;
+min-width: 90%;
 max-height: 622px;
 border-radius: 9px;
 filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.394));
@@ -47,7 +48,6 @@ filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.394));
 }
 #headshot-wrap{
     margin-top: 20px;
-    margin-bottom: 3rem;
 }
 
 #slogan{
@@ -64,9 +64,7 @@ filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.394));
     
 }
 
-#logo{
-    min-height: 300px;
-}
+
 
 #mid-section::before{
     content: url(/images/mid-bg.svg);
@@ -126,7 +124,7 @@ border-radius: 37px;
     margin-right: 70px;
     border-radius: 37px;
     max-width: 446px;
-    min-width: 367px;
+    min-width: 300px;
     max-height: 335px;
     min-height: 211px;
 }
@@ -183,12 +181,23 @@ z-index: -1;
     content: url(/images/banner/banner-xxl.svg);
     position: absolute;
     width: 40vw;
+    top: 0;
     
 }
-
+#cta{
+    background-color: var(--btn-orange);
+    border: none;
+    outline: none !important;
+}
+button:active, button:focus{
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
 @media screen and (max-width: 576px) {
     #headshot{
         width: 90%;
+        position: absolute;
     }
     #footer{
         flex-direction: column;
@@ -196,6 +205,9 @@ z-index: -1;
     }
     #banner-wrapper{
         flex-direction: column;
+        justify-content: center;
+        margin-top: 30vh;
+        
     }
     #slogan{
         font-size: 22px;
@@ -220,5 +232,54 @@ z-index: -1;
 
     #bio p{
         width: 23ch;
+    }
+    #left-side{
+        display: none;
+    }
+    #top-bg{
+        display: none;
+    }
+    #banner::before{
+        width: 68vw;
+        height: auto;
+    }
+    #logo{
+        justify-content: center;
+        align-self: center;
+        height: auto !important;
+        width: 200px;
+    }
+    #slogan-btn-wrap{
+        align-items: center !important;
+    }
+    #headshot-wrap:after{
+        content: '';
+        position: relative;
+        display: block;
+        height: 20px;
+        
+    }
+    #headshot-wrap::before{
+        content: '';
+        position: relative;
+        display: block;
+        height: 95px;
+        top: 0;
+        bottom: 0;
+        margin-bottom: 10px;
+        transform: translateY(100px);
+    }
+    #banner{
+        align-items: center !important;
+    }
+    #headshot-wrap{
+        position: relative;
+        transform: translateY(50px);
+    }
+    #skills-wrapper{
+        margin-top: 150px !important;
+        margin-bottom: 50px !important;
+        min-width: none !important;
+        margin: auto;
     }
 }
