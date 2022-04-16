@@ -161,14 +161,15 @@ padding: 18px;
 }
 
 footer::before{
-content: url(/images/Rectangle\ 16.);
+
 position: absolute;
-z-index: -4;
+z-index: -5
+;
 }
 
 #socials{
     max-height: 1109px;
-    min-height: 839px;
+    min-height: px;
 }
 
 #socials::before{
@@ -181,8 +182,9 @@ z-index: -4;
 }
 form{
 border-radius: 35px;
-height: 771px;
-width: 609px;
+max-height: 771px;
+max-width: 609px;
+min-width: 327px;
 
 }
 #form-wrapper{
@@ -192,7 +194,7 @@ width: 609px;
 #form-wrapper::before{
     content: url(/images/Rectangle\ 17.svg);
 position: absolute;
-width: 804.54px;
+max-width: 804.54px;
 height: 813.44px;
 left: 0;
 top: 0;
@@ -210,10 +212,30 @@ z-index: -1;
     border: none;
     outline: none !important;
 }
+.project-card{
+    
+    min-height: 250px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 2.88px 23.04px rgba(179, 179, 179, 0.25);
+    border-radius: 20px;
+    background-color: white;
+}
+
+button{
+    background-color: var(--btn-orange);
+    color: white;
+    border:none
+}
 button:active, button:focus{
     border: none;
     outline: none !important;
     box-shadow: none !important;
+}
+#newsweekly{
+    background-color: var();
+} 
+#proj-button{
+    height: 30px;
 }
 
 @media screen and (max-width: 576px) {
@@ -224,7 +246,16 @@ button:active, button:focus{
     }
     #footer{
         flex-direction: column;
-        
+    
+    }
+    #footer::before{
+        content: url(/images/Rectangle\ 20.svg);
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1109px;
+        z-index: -2;
+        left: 0;
     }
     #banner-wrapper{
         flex-direction: column;
@@ -243,7 +274,12 @@ button:active, button:focus{
         align-items: center;
         justify-content: center;
     }
-    form{width: 100%;}
+    #form{
+        width: 370px;
+        display: block;
+        position: relative;
+        align-self: flex-start;
+    }
     #skill-bio{
         flex-direction: column-reverse;
     }
@@ -252,7 +288,7 @@ button:active, button:focus{
         color: var(--text-blue);
     }
     #form-wrapper{
-        display: none;
+        
     }
     #prj-wrap{
         flex-direction: column;
@@ -333,6 +369,21 @@ button:active, button:focus{
         top: -20px;
         overflow: hidden;
     }
+    #proj-img{
+        height: 80px;
+    }
+    .card-flex{
+        height: 250px;
+    }
+    form{
+        padding: 20px;
+        background: linear-gradient(165.25deg, rgba(188, 42, 191, 0.32) 4.18%, rgba(68, 88, 207, 0) 89.58%);
+        border-radius: 35px;
+    }
+    #form-wrapper::before{
+        display: none
+    };
+    
 }
 
 
