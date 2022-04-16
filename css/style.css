@@ -221,4 +221,10 @@ z-index: -1;
     #bio p{
         width: 23ch;
     }
+    #left-side{
+        display: none;
+    }
+    #top-bg{
+        display: none;
+    }
 }
