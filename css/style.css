@@ -1,5 +1,6 @@
 html{
     font-size: 100%;
+    overflow-x: hidden;
 }
 :root{
     --btn-orange: #F1885A;
@@ -20,6 +21,9 @@ a, a:visited{
     color: white !important;
     z-index: 10 !important;
 }
+#footer{
+    padding: 0 !important;
+}
 /* Nav */
 .nav-item:hover{
     border-bottom: 5px solid var(--btn-orange);
@@ -27,7 +31,12 @@ a, a:visited{
 .nav-item{
     line-height: 25px;
 }
-
+.dropdown-menu{
+    background-color: #3437cf60;
+}
+.dropdown-item:hover{
+    background-color: #3437CF;
+}
 /* baner */
 
 #banner{
@@ -245,10 +254,12 @@ button:active, button:focus{
 } 
 #proj-button{
     height: 30px;
+    width: 236px;
 }
 footer{
     background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
     z-index: -1;
+    
 }
 #logo-footer{
     left: 0%;
@@ -407,6 +418,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         margin-bottom: 10px;
         transform: translateY(100px);
     }
+
     #banner{
         align-items: center !important;
     }
@@ -478,8 +490,29 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         border-width: 10px;
         margin-right: 10px;
       }
+      .navbar{
+        width: 100vw;
+        
+    }
+    #navbarNavDropdown{
+        background-color: #3437cfc2;
+        height: 100%;
+        position: absolute;
+        width: 100vw;
+        padding-top: 80px;
+        height: 300px;
+        top: 0;
+        left: 0;
+        padding-left: 10px;
+    }
+      
 }
 
+.navbar{
+    z-index: 10;
+    padding: 10px;
+    
+}
 
 
 .sprite-mobile {
