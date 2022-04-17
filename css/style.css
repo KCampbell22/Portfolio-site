@@ -355,10 +355,13 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         flex-direction: column;
     }
     #slogan-btn{
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: relative;
+        
     }
     #form{
         width: 370px;
