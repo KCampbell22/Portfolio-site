@@ -13,6 +13,12 @@ html{
 }
 body{
     background-color: var(--background);
+    overflow-x: hidden;
+}
+
+a, a:visited{
+    color: white !important;
+    z-index: 10 !important;
 }
 /* Nav */
 .nav-item:hover{
@@ -161,23 +167,26 @@ padding: 18px;
 }
 
 footer::before{
-
-position: absolute;
-z-index: -5
-;
-}
-
-#socials{
-    max-height: 1109px;
-    min-height: px;
-}
-
-#socials::before{
     content: url(/images/logo-removebg-preview\ 3.svg);
     position: absolute;
     max-height: 1109px;
     min-height: 839px;
+    position: absolute;
     z-index: -2;
+}
+
+#socials{
+    max-height: 1109px;
+    
+}
+
+#footer::before{
+   content: url(/images/logo-removebg-preview\ 3.svg); 
+   position: absolute;
+   display: block;
+   height: 100px;
+   z-index: -2;
+   top: 0;
 
 }
 form{
@@ -195,7 +204,7 @@ min-width: 327px;
     content: url(/images/Rectangle\ 17.svg);
 position: absolute;
 max-width: 804.54px;
-height: 813.44px;
+max-height: 813.44px;
 left: 0;
 top: 0;
 z-index: -1;
@@ -222,12 +231,12 @@ z-index: -1;
 }
 
 button{
-    background-color: var(--btn-orange);
-    color: white;
-    border:none
+    background-color: var(--btn-orange) !important;
+    color: white !important;
+    border:none !important;
 }
 button:active, button:focus{
-    border: none;
+    border: none !important;
     outline: none !important;
     box-shadow: none !important;
 }
@@ -237,23 +246,89 @@ button:active, button:focus{
 #proj-button{
     height: 30px;
 }
+footer{
+    background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
+    z-index: -1;
+}
+#logo-footer{
+    left: 0%;
+    height: 326px;
+}
+.form-label{
+    margin-top: 40px!important;
+}
+input{
+    background-color: transparent !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid #9381FF !important;
+    border-radius: 0 !important;
+}
+input, select, textarea{
+    color: white !important;
+    margin-bottom: 5px !important;
+    font-size: .9rem !important;
+    font-weight: 200 !important;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;}
+input{
+line-height: 20px !important;
+height: 21px !important;
+}
+label{
+    margin: 1px !important;
+    font-family: 'Inter', sans-serif;
+}
+textarea{
+    background-color: transparent !important;
+    border-bottom: 1px solid #9381FF !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+}
+input:active, input:focus, textarea:focus, textarea:active, .form{
 
+    outline: none !important; 
+    box-shadow: none !important;
+}
+.navbar-toggler-icon{
+    background-image: url(/images/icons8-hamburger-menu.svg) !important;
+    z-index: 10 !important;
+}
+.navbar-toggler{
+    z-index: 100 !important;
+    margin-left: 15px;
+    background-color: transparent !important;
+}
+
+#copyright{
+    font-size: .7rem;
+}
+#message-box{
+
+}
 @media screen and (max-width: 576px) {
+    #socials{
+        display: none;
+    }
+    
     #headshot{
         width: 90%;
         position: absolute;
         transform: translateY(116px);
     }
-    #footer{
+    footer{
         flex-direction: column;
     
     }
-    #footer::before{
-        content: url(/images/Rectangle\ 20.svg);
+    footer::before{
+        background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
         position: absolute;
         display: block;
         width: 100%;
-        height: 1109px;
+        height: 100%;
         z-index: -2;
         left: 0;
     }
@@ -381,9 +456,53 @@ button:active, button:focus{
         border-radius: 35px;
     }
     #form-wrapper::before{
-        display: none
-    };
-    
+        display: none;
+    }
+    .nav-item:hover{
+        border: 1px solid transparent !important;
+    }
+    .dropdown-item{
+       
+        color: white;
+    }
+    .dropdown-menu{
+        background-color: transparent;
+        border: none;
+    }
+    #contact-bl{
+        margin-bottom: 5px;
+        margin-right: 120px !important;
+        height  : 1px;
+        width   : 72px;  /* or 100px */
+        border-top: 1px solid #F1885A;
+        border-width: 10px;
+        margin-right: 10px;
+      }
 }
 
+
+
+.sprite-mobile {
+    background-image: url(/images/sprites-mobile.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-mobile-A-linkedin {
+    width: 34px;
+    height: 35px;
+    background-position: -10px -10px;
+}
+
+.sprite-mobile-B-twitter {
+    width: 34px;
+    height: 34px;
+    background-position: -64px -10px;
+}
+
+.sprite-mobile-C-github {
+    width: 34px;
+    height: 34px;
+    background-position: -118px -10px;
+}
 
