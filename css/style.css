@@ -274,7 +274,7 @@ input, select, textarea{
     font-family: 'Poppins', sans-serif;}
 input{
 line-height: 20px !important;
-height: 21px !important;
+height: 30px !important;
 }
 label{
     margin: 1px !important;
