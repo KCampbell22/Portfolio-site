@@ -40,7 +40,7 @@ a, a:visited{
 /* baner */
 
 #banner{
-min-height: 630px;
+min-height: 711px;
 max-height: 958px;
 min-width: 375px;
 
@@ -51,9 +51,9 @@ background: linear-gradient(120.05deg, #243AC0 9.39%, #000421 68.32%);
 
 #headshot{
 max-width: 1000px;
-min-width: 90%;
+min-width: 367px;
+min-height: auto;
 max-height: 780px;
-transform: translateY(60px);
 
 }
 .grayscale{
@@ -63,23 +63,8 @@ transform: translateY(60px);
     margin-top: 10px;
 }
 
-#headshot-wrap:after{
-    content: '';
-    position: relative;
-    display: block;
-    height: 20px;
-    
-}
-#headshot-wrap::before{
-    content: '';
-    position: relative;
-    display: block;
-    height: 95px;
-    top: 0;
-    bottom: 0;
-    margin-bottom: 10px;
-    transform: translateY(100px);
-}
+
+
 
 
 #slogan{
@@ -98,7 +83,7 @@ transform: translateY(60px);
 #cta{
     height: 66px;
     width: 290px;
-    margin-bottom: 80px;
+    margin-bottom: 52px;
 }
 
 
@@ -320,159 +305,10 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 #message-box{
 
 }
-@media screen and (max-width: 576px) {
-    #socials{
-        display: none;
-    }
-    
-    #headshot{
-        width: 90%;
-        position: absolute;
-        transform: translateY(116px);
-    }
-    footer{
-        flex-direction: column;
-    
-    }
-    footer::before{
-        background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        z-index: -2;
-        left: 0;
-    }
-    #banner-wrapper{
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 30vh;
-        
-    }
-    #slogan{
-        margin-bottom: 30px;
-        font-size: 22px;
-        flex-direction: column;
-    }
-    #slogan-btn{
+@media screen and (max-width: 575px) {
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        
-    }
-    #form{
-        width: 370px;
-        display: block;
-        position: relative;
-        align-self: flex-start;
-    }
-    #skill-bio{
-        flex-direction: column-reverse;
-    }
-    #bio{
-        margin-bottom: 30px;
-        color: var(--text-blue);
-    }
-    #form-wrapper{
-        
-    }
-    #prj-wrap{
-        flex-direction: column;
-    }
+    /* Navbar */
 
-    
-    #left-side{
-        display: none;
-    }
-    #top-bg{
-        display: none;
-    }
-    #banner::before{
-        width: 68vw;
-        height: auto;
-    }
-    #logo{
-        justify-content: center;
-        align-self: center;
-        height: auto !important;
-        width: 200px;
-    }
-    #slogan-btn-wrap{
-        align-items: center !important;
-    }
-    #headshot-wrap:after{
-        content: '';
-        position: relative;
-        display: block;
-        height: 20px;
-        margin-bottom: 20px !important;
-        
-    }
-    #headshot-wrap::before{
-        content: '';
-        position: relative;
-        display: block;
-        height: 95px;
-        top: 0;
-        bottom: 0;
-        margin-bottom: 10px;
-        transform: translateY(100px);
-    }
-
-    #banner{
-        align-items: center !important;
-    }
-    #headshot-wrap{
-        position: relative;
-        transform: translateY(50px);
-    }
-    #skills-wrapper{
-        margin-top: 20px !important;
-        margin-bottom: 50px !important;
-        min-width: none !important;
-        margin: auto;
-    }
-    .grayscale{
-        position: absolute;
-    }
-    #logo{
-        margin-bottom: 20px !important;
-    }
-    #bio{
-        margin-top: 155px;
-        margin-bottom: 30px;
-        text-align: center;
-        color: var(--text-blue);
-    }
-    #skills-wrapper::before{
-        content: url(/images/Rectangle\ 3.svg);
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-        height: 80%;
-
-
-
-        top: -20px;
-        overflow: hidden;
-    }
-    #proj-img{
-        height: 80px;
-    }
-    .card-flex{
-        height: 250px;
-    }
-    form{
-        padding: 20px;
-        background: linear-gradient(165.25deg, rgba(188, 42, 191, 0.32) 4.18%, rgba(68, 88, 207, 0) 89.58%);
-        border-radius: 35px;
-    }
-    #form-wrapper::before{
-        display: none;
-    }
     .nav-item:hover{
         border: 1px solid transparent !important;
     }
@@ -484,16 +320,8 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         background-color: transparent;
         border: none;
     }
-    #contact-bl{
-        margin-bottom: 5px;
-        margin-right: 120px !important;
-        height  : 1px;
-        width   : 72px;  /* or 100px */
-        border-top: 1px solid #F1885A;
-        border-width: 10px;
-        margin-right: 10px;
-      }
-      .navbar{
+
+    .navbar{
         width: 100vw;
         
     }
@@ -508,7 +336,400 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         left: 0;
         padding-left: 10px;
     }
+
+    /* banner */
+    
+    
+    #headshot{
+        width: 90%;
+        
+        
+    }
+
+    #banner::before{
+        width: 68vw !important;
+        
+    }
+    #logo{
+        justify-content: center;
+        align-self: center;
+        height: auto !important;
+        width: 200px;
+    }
+    #slogan-btn-wrap{
+        align-items: center !important;
+    }
+   
+    
+    #banner{
+        align-items: center !important;
+    }
+
+    #banner-wrapper{
+        margin-bottom: -24rem;
+    }
+    #headshot-wrap{
+        position: relative;
+    }
+
+   
+    #logo{
+        margin-bottom: 20px !important;
+    }
+
+    #slogan{
+        margin-bottom: 30px;
+        font-size: 22px;
+        flex-direction: column;
+    }
+    #slogan-btn{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center !important;
+        position: relative;
+        
+    }
+ /* ***********************************************/
+    
+
+ /* skills and bio */
+
+ #skill-bio{
+    flex-direction: column-reverse;
+    margin-top: 7.8rem;
+}
+
+#left-side{
+    display: none;
+}
+#top-bg{
+    display: none;
+}
+#skills-wrapper{
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+    min-width: none !important;
+    margin: auto;
+}
+
+#bio{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--text-blue);
+}
+#skills-wrapper::before{
+    content: url(/images/Rectangle\ 3.svg);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 80%;
+
+
+
+    top: -20px;
+    overflow: hidden;
+}
+
+
+ /* ***********************************************/
+
+
+
+ /* Projects */
+
+
+ #prj-wrap{
+    flex-direction: column;
+}
+
+
+#proj-img{
+    height: 80px;
+}
+.card-flex{
+    height: 250px;
+}
+
+
+ /* ***********************************************/
+
+
+
+ /* Footer */
+    #socials{
+        display: none;
+    }
+    
+    
+    footer{
+        flex-direction: column;
+    
+    }
+    footer::before{
+        background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        left: 0;
+    }
+    #form{
+        width: 370px;
+        display: block;
+        position: relative;
+        align-self: flex-start;
+    }
+    #form-wrapper{
+        
+    }
+    
+    form{
+        padding: 20px;
+        background: linear-gradient(165.25deg, rgba(188, 42, 191, 0.32) 4.18%, rgba(68, 88, 207, 0) 89.58%);
+        border-radius: 35px;
+    }
+    #form-wrapper::before{
+        display: none;
+    }
+    
+    #contact-bl{
+        margin-bottom: 5px;
+        margin-right: 120px !important;
+        height  : 1px;
+        width   : 72px;  /* or 100px */
+        border-top: 1px solid #F1885A;
+        border-width: 10px;
+        margin-right: 10px;
+      }
+
+    /*******************************************************/
+
       
+}
+
+@media screen and (max-width: 767px) and (min-width: 575px) {
+/* nav-bar */
+
+.dropdown-item{
+       
+    color: white;
+}
+.dropdown-item:hover{
+    border-bottom: none;
+}
+.dropdown-menu, .dropdown{
+    background-color: #3034C4;
+    border: none !important;
+}
+
+.navbar{
+    width: 100vw;
+    
+}
+#navbarNavDropdown{
+    background-color: #3034C4;
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    padding-top: 80px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+}
+.nav-item:hover{
+    border-bottom: none;
+}
+
+/***************************************/
+
+/* Banner */
+
+#banner-wrapper{
+    flex-direction: column;
+    justify-content: center !important;
+    margin-top: 30vh;
+    margin-bottom: -23rem;
+    
+}
+#banner{
+    align-items: center !important;
+}
+#headshot{
+    width: 90%;
+}
+
+#banner::before{
+    width: 55vw;
+    height: auto;
+}
+#logo{
+    justify-content: center;
+    align-self: center;
+    height: auto !important;
+    width: 200px;
+}
+#slogan-btn-wrap{
+    align-items: center !important;
+}
+
+
+
+#banner{
+    align-items: center !important;
+}
+#headshot-wrap{
+    position: relative;
+}
+
+
+#logo{
+    margin-bottom: 20px !important;
+}
+
+#slogan{
+    margin-bottom: 30px;
+    font-size: 22px;
+    flex-direction: column;
+}
+#slogan-btn{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center !important;
+    position: relative;
+    
+}
+
+
+/***************************************/
+
+
+/* Skills and bio */
+
+
+#skill-bio{
+    flex-direction: column-reverse;
+    margin-top: 17rem;
+}
+#bio{
+    margin-bottom: 30px;
+    color: var(--text-blue);
+}
+#left-side{
+    display: none;
+}
+#top-bg{
+    display: none;
+}
+#skills-wrapper{
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+    min-width: none !important;
+    margin: auto;
+}
+
+#bio{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--text-blue);
+}
+#skills-wrapper::before{
+    content: url(/images/Rectangle\ 3.svg);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: 80%;
+
+
+
+    top: -20px;
+    overflow: hidden;
+}
+
+
+
+/***************************************/
+
+
+/* Projects */
+
+
+#prj-wrap{
+    flex-direction: column;
+}
+
+
+#proj-img{
+    height: 80px;
+}
+.card-flex{
+    height: 250px;
+}
+
+
+/***************************************/
+
+/* Footer */
+
+#socials{
+    display: none;
+}
+
+
+footer{
+    flex-direction: column;
+
+}
+footer::before{
+    background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    left: 0;
+}
+#form{
+    width: 370px;
+    display: block;
+    position: relative;
+    align-self: flex-start;
+}
+#form-wrapper{
+    
+}
+
+form{
+    padding: 20px;
+    background: linear-gradient(165.25deg, rgba(188, 42, 191, 0.32) 4.18%, rgba(68, 88, 207, 0) 89.58%);
+    border-radius: 35px;
+}
+#form-wrapper::before{
+    display: none;
+}
+
+#contact-bl{
+    margin-bottom: 5px;
+    margin-right: 120px !important;
+    height  : 1px;
+    width   : 72px;  /* or 100px */
+    border-top: 1px solid #F1885A;
+    border-width: 10px;
+    margin-right: 10px;
+  }
+
+
+/***************************************/
+
+
+
 }
 
 .navbar{
