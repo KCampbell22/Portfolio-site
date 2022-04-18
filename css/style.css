@@ -305,38 +305,38 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 #message-box{
 
 }
+
+.dropdown-item{
+       
+    color: white;
+}
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+
+.navbar{
+    width: 100vw;
+    
+}
+#navbarNavDropdown{
+    background-color: #3437cfc2;
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    padding-top: 80px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+}
+
+/* Extra Small screens */
 @media screen and (max-width: 575px) {
 
     /* Navbar */
 
-    .nav-item:hover{
-        border: 1px solid transparent !important;
-    }
-    .dropdown-item{
-       
-        color: white;
-    }
-    .dropdown-menu{
-        background-color: transparent;
-        border: none;
-    }
-
-    .navbar{
-        width: 100vw;
-        
-    }
-    #navbarNavDropdown{
-        background-color: #3437cfc2;
-        height: 100%;
-        position: absolute;
-        width: 100vw;
-        padding-top: 80px;
-        height: 300px;
-        top: 0;
-        left: 0;
-        padding-left: 10px;
-    }
-
+    
     /* banner */
     
     
@@ -511,7 +511,9 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
       
 }
 
-@media screen and (max-width: 767px) and (min-width: 575px) {
+/* Small Screens: Smartphones */
+
+@media screen and (max-width: 767px) {
 /* nav-bar */
 
 .dropdown-item{
@@ -763,3 +765,63 @@ form{
     background-position: -118px -10px;
 }
 
+
+/* Medium screens / Tablets */
+
+@media screen and (max-width: 991px){
+
+/* Banner */
+
+.mobile-v{
+    display: none !important;
+}
+    #banner{
+        min-height: 587px !important;
+    }
+
+    #banner::before{
+        width: 45vw;
+    }
+
+
+    #banner-wrapper{
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        height: 575px;
+        margin-bottom: -10rem;
+        z-index: 10;
+    }
+
+    #slogan{
+        font-size: 31px;
+        text-align: center;
+    }
+    
+    #logo{
+        align-items: flex-start !important;
+        margin-bottom: -117px;
+        z-index: 10;
+        justify-content: flex-end;
+    }
+
+    #logo img{
+        width: 168px;
+    }
+    #slogan-btn-wrap{
+        justify-content: center !important;
+    }
+    #slogan-btn-wrap, #headshot-wrap{
+        margin-bottom: -21rem;
+
+    }
+    
+
+
+/**********************************************/
+/*large screens / laptops and small desktops */
+
+@media screen and (max-width: 1200px){
+    
+}
+}
