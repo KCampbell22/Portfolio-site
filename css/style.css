@@ -51,7 +51,7 @@ background: linear-gradient(120.05deg, #243AC0 9.39%, #000421 68.32%);
 
 #headshot{
 max-width: 1000px;
-min-width: 367px;
+min-width: 330px;
 min-height: auto;
 max-height: 780px;
 
@@ -217,11 +217,16 @@ z-index: -1;
 }
 .project-card{
     
-    min-height: 250px;
+    min-height: 300px;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     box-shadow: 0px 2.88px 23.04px rgba(179, 179, 179, 0.25);
     border-radius: 20px;
     background-color: white;
+}
+#proj-img{
+    height: 175px;
+    width: auto;
 }
 
 button{
@@ -354,10 +359,11 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         justify-content: center;
         align-self: center;
         height: auto !important;
-        width: 200px;
+        width: 200px !important;
     }
     #slogan-btn-wrap{
         align-items: center !important;
+        margin-top: -3rem !important;
     }
    
     
@@ -366,7 +372,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     }
 
     #banner-wrapper{
-        margin-bottom: -24rem;
+        margin-bottom: -22rem !important;
     }
     #headshot-wrap{
         position: relative;
@@ -374,13 +380,14 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 
    
     #logo{
-        margin-bottom: 20px !important;
+        margin-bottom: 73px !important;
     }
 
     #slogan{
         margin-bottom: 30px;
         font-size: 22px;
         flex-direction: column;
+        text-align: center;
     }
     #slogan-btn{
 
@@ -398,14 +405,14 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 
  #skill-bio{
     flex-direction: column-reverse;
-    margin-top: 7.8rem;
+    margin-top: 7.8rem !important;
 }
 
 #left-side{
-    display: none;
+    display: none !important;
 }
 #top-bg{
-    display: none;
+    display: none !important;
 }
 #skills-wrapper{
     margin-top: 20px !important;
@@ -415,8 +422,8 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 }
 
 #bio{
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
     text-align: center;
     color: var(--text-blue);
 }
@@ -505,6 +512,9 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         border-width: 10px;
         margin-right: 10px;
       }
+      .desktop{
+          display: none !important;
+      }
 
     /*******************************************************/
 
@@ -513,7 +523,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 
 /* Small Screens: Smartphones */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 576px) {
 /* nav-bar */
 
 .dropdown-item{
@@ -550,7 +560,9 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 /***************************************/
 
 /* Banner */
-
+.mobile-v{
+    display: none !important;
+}
 #banner-wrapper{
     flex-direction: column;
     justify-content: center !important;
@@ -768,7 +780,7 @@ form{
 
 /* Medium screens / Tablets */
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) and (min-width: 768px){
 
 /* Banner */
 
@@ -799,7 +811,6 @@ form{
     }
     
     #logo{
-        align-items: flex-start !important;
         margin-bottom: -117px;
         z-index: 10;
         justify-content: flex-end;
@@ -815,8 +826,85 @@ form{
         margin-bottom: -21rem;
 
     }
-    
 
+ /* Skill / Bio */
+#skill-bio{
+    margin-top: 18rem;
+}
+
+#top-bg, #left-side{
+    display: block;
+
+}
+#top-bg{
+    height: 129px;
+    top: -77px;
+    left: 0px;
+}
+#left-side{
+    left: -71px;
+    top: -23px;
+}
+
+
+
+
+
+
+
+
+/******************************************************/ 
+
+
+
+
+/* projects */
+
+
+
+/******************************************************/ 
+
+
+
+
+
+/* Footer */
+#footer{
+    flex-direction: row !important;
+}
+footer::before{
+    display: none;
+}
+#orange-bos{
+    flex-direction: column !important;
+}
+#sprite-row{
+    align-items: end;
+}
+#sprite{
+    flex-direction: column !important;
+    align-items: flex-end !important;
+}
+label, textarea{
+    margin-top: 10px !important;
+}
+.mobile{
+    display: none !important;
+}
+#name-md-up{
+    text-align: left;
+    margin-top: 12rem;
+    font-size: 1.5rem;
+}
+
+#copyright{
+    margin-top: 9rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+/******************************************************/ 
 
 /**********************************************/
 /*large screens / laptops and small desktops */
