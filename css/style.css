@@ -25,6 +25,7 @@ a, a:visited{
     padding: 0 !important;
 }
 /* Nav */
+
 .nav-item:hover{
     border-bottom: 5px solid var(--btn-orange);
 }
@@ -35,10 +36,20 @@ a, a:visited{
     background-color: #3437cf60;
 }
 .dropdown-item:hover{
-    background-color: #3437CF;
-}
-/* baner */
+   border-bottom: 1px solid #F1885A;
 
+}
+
+/* baner */
+#headshot-wrap{
+    margin-top: 9rem !important;
+}
+#slogan-btn-wrap{
+    margin-bottom: -18rem;
+}
+#banner-wrapper{
+    margin-top: 7rem;
+}
 #banner{
 min-height: 711px;
 max-height: 958px;
@@ -159,15 +170,11 @@ box-shadow: 17.01px 2.52px 38.43px rgba(0, 0, 0, 0.25);
 border-radius: 3.15px;
 padding: 18px;
 }
-
-footer::before{
-    content: url(/images/logo-removebg-preview\ 3.svg);
-    position: absolute;
-    max-height: 1109px;
-    min-height: 839px;
-    position: absolute;
-    z-index: -2;
+#skill-bio{
+    margin-top: 22rem !important;
 }
+
+
 
 #socials{
     max-height: 1109px;
@@ -175,10 +182,11 @@ footer::before{
 }
 
 #footer::before{
-   content: url(/images/logo-removebg-preview\ 3.svg); 
+    background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
    position: absolute;
    display: block;
-   height: 100px;
+   height: 100%;
+   width: 100%;
    z-index: -2;
    top: 0;
 
@@ -194,15 +202,7 @@ min-width: 327px;
     border-radius: 35px;
 }
 
-#form-wrapper::before{
-    content: url(/images/Rectangle\ 17.svg);
-position: absolute;
-max-width: 804.54px;
-max-height: 813.44px;
-left: 0;
-top: 0;
-z-index: -1;
-}
+
 #banner::before{
     content: url(/images/banner/banner-xxl.svg);
     position: absolute;
@@ -246,8 +246,10 @@ button:active, button:focus{
     height: 30px;
     width: 236px;
 }
+#prj-wrap{
+    flex-direction: row !important;
+}
 footer{
-    background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
     z-index: -1;
     
 }
@@ -324,24 +326,17 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     width: 100vw;
     
 }
-#navbarNavDropdown{
-    background-color: #3437cfc2;
-    height: 100%;
-    position: absolute;
-    width: 100vw;
-    padding-top: 80px;
-    height: 300px;
-    top: 0;
-    left: 0;
-    padding-left: 10px;
-}
+
 
 /* Extra Small screens */
 @media screen and (max-width: 575px) {
 
     /* Navbar */
 
-    
+    .navbar-collapse{
+        background-color: #3437CF;
+        padding: 6px;
+    }
     /* banner */
     
     
@@ -373,6 +368,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 
     #banner-wrapper{
         margin-bottom: -22rem !important;
+        flex-direction: column !important;
     }
     #headshot-wrap{
         position: relative;
@@ -425,7 +421,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     margin-top: 20px !important;
     margin-bottom: 30px !important;
     text-align: center;
-    color: var(--text-blue);
+    color: var(--text-blue) !important;
 }
 #skills-wrapper::before{
     content: url(/images/Rectangle\ 3.svg);
@@ -512,9 +508,6 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         border-width: 10px;
         margin-right: 10px;
       }
-      .desktop{
-          display: none !important;
-      }
 
     /*******************************************************/
 
@@ -525,7 +518,10 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 
 @media screen and (max-width: 767px) and (min-width: 576px) {
 /* nav-bar */
-
+.navbar-collapse{
+    background-color: #3437CF;
+    padding: 6px;
+}
 .dropdown-item{
        
     color: white;
@@ -564,7 +560,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     display: none !important;
 }
 #banner-wrapper{
-    flex-direction: column;
+    flex-direction: column !important; 
     justify-content: center !important;
     margin-top: 30vh;
     margin-bottom: -23rem;
@@ -609,6 +605,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     margin-bottom: 30px;
     font-size: 22px;
     flex-direction: column;
+    text-align: center;
 }
 #slogan-btn{
 
@@ -701,13 +698,12 @@ footer{
     flex-direction: column;
 
 }
-footer::before{
-    background: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%);
+#footer-wrapper::before{
+    background-image: linear-gradient(120.05deg, #001280 9.39%, #000421 68.32%) !important;
     position: absolute;
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    z-index: -2;
     left: 0;
 }
 #form{
@@ -801,7 +797,7 @@ form{
         align-items: center;
         justify-content: center;
         height: 575px;
-        margin-bottom: -10rem;
+        margin-bottom: -21rem !important;
         z-index: 10;
     }
 
@@ -811,25 +807,30 @@ form{
     }
     
     #logo{
-        margin-bottom: -117px;
+        margin-bottom: -12.8rem;
         z-index: 10;
         justify-content: flex-end;
     }
 
     #logo img{
-        width: 168px;
+        width: 197px;
     }
     #slogan-btn-wrap{
         justify-content: center !important;
     }
     #slogan-btn-wrap, #headshot-wrap{
-        margin-bottom: -21rem;
+        margin-bottom: -27rem;
 
+    }
+
+    #headshot{
+        min-width: 80%;
+        margin-top: 6rem !important;
     }
 
  /* Skill / Bio */
 #skill-bio{
-    margin-top: 18rem;
+    margin-top: 27rem;
 }
 
 #top-bg, #left-side{
@@ -845,8 +846,14 @@ form{
     left: -71px;
     top: -23px;
 }
+#bio{
+    font-size: 1rem;
+}
 
 
+.desktop{
+    display: none !important;
+}
 
 
 
@@ -869,12 +876,15 @@ form{
 
 
 /* Footer */
+footer{
+    background-color: transparent !important;
+}
+
 #footer{
     flex-direction: row !important;
+
 }
-footer::before{
-    display: none;
-}
+
 #orange-bos{
     flex-direction: column !important;
 }
@@ -902,9 +912,44 @@ label, textarea{
     font-size: .8rem;
     text-align: center;
 }
+#form-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius:35px 0px 0px 35px;
+    height: 90%;
+}
+
+
+
+form{
+    width: 80%;
+    padding: 10px;
+    z-index: 10;
+}
+#form-col{
+    right: -30px;
+}
+
+
+#form-wrapper::before{
+    content: url(/images/Group\ 64244grouped-img.svg);
+   position: absolute;
+    width: 100%;
+    padding-right: 20px;
+    top: 13px;
+}
+    
+
+}
+}
+
+
 
 
 /******************************************************/ 
+b
 
 /**********************************************/
 /*large screens / laptops and small desktops */
