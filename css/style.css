@@ -12,6 +12,10 @@ html{
 
 
 }
+
+a{
+    z-index: 10000 !important;
+}
 body{
     background-color: var(--background);
     overflow-x: hidden;
@@ -19,7 +23,6 @@ body{
 
 a, a:visited{
     color: white !important;
-    z-index: 10 !important;
 }
 #footer{
     padding: 0 !important;
@@ -35,17 +38,12 @@ a, a:visited{
 .dropdown-menu{
     background-color: #3437cf60;
 }
-.dropdown-item:hover{
-   border-bottom: 1px solid #F1885A;
-
-}
+.nav-item:hover
 
 /* baner */
-#headshot-wrap{
-    margin-top: 9rem !important;
-}
+
 #slogan-btn-wrap{
-    margin-bottom: -18rem;
+   margin-top: 10rem;
 }
 #banner-wrapper{
     margin-top: 7rem;
@@ -71,11 +69,15 @@ max-height: 780px;
     filter: grayscale(70%);
 }
 #headshot-wrap{
-    margin-top: 10px;
+    margin-top: 6rem
 }
 
 
-
+#bio{
+    font-size: 1.1rem;
+    color: var(--text-blue);
+    font-family: 'Poppins';
+}
 
 
 #slogan{
@@ -95,8 +97,22 @@ max-height: 780px;
     height: 66px;
     width: 290px;
     margin-bottom: 52px;
+    margin-top: 3rem;
 }
-
+#logo{
+    margin-bottom: 12rem;
+    z-index: 3 !important;
+}
+#slogan-wrap{
+    width: 78ch !important;
+}
+#top-bg{
+    position: absolute;
+    top: -105px;
+    z-index: -1;
+    left: 8px;
+    height: 165px;
+}
 
 #mid-section::before{
     content: url(/images/mid-bg.svg);
@@ -129,18 +145,14 @@ max-height: 780px;
 }
 
 #left-side{
-position: absolute;
-left: -123px;
-z-index: -1;
-top: -49px;
+    position: absolute;
+    left: -76px;
+    z-index: -1;
+    top: -28px;
+    height: 239px;
 
 }
-#top-bg{
-    position: absolute;
-    top: -116px;
-    z-index: -1;
-    left: -29px;
-}
+
 
 .skill-box p{
     margin: auto;
@@ -195,7 +207,7 @@ form{
 border-radius: 35px;
 max-height: 771px;
 max-width: 609px;
-min-width: 327px;
+min-width: 290px;
 
 }
 #form-wrapper{
@@ -223,9 +235,13 @@ min-width: 327px;
     box-shadow: 0px 2.88px 23.04px rgba(179, 179, 179, 0.25);
     border-radius: 20px;
     background-color: white;
+    margin-right: 3rem;
 }
 #proj-img{
-    height: 175px;
+    min-height: 157px;
+    max-height: 200px;
+    min-width: 157px;
+    max-width: 240px;
     width: auto;
 }
 
@@ -244,13 +260,14 @@ button:active, button:focus{
 } 
 #proj-button{
     height: 30px;
-    width: 236px;
 }
 #prj-wrap{
     flex-direction: row !important;
+    margin-left: 2.4rem;
+    margin-bottom: 4rem;
 }
-footer{
-    z-index: -1;
+#footer{
+    flex-direction: row !important;
     
 }
 #logo-footer{
@@ -327,7 +344,36 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     
 }
 
+#form-col{
+    background-image: url(/images/footer.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
 
+#contact-bl, #contact-mobile{
+    display: none;
+}
+
+#name-md-up{
+    margin-bottom: 18rem;
+    margin-top: 7rem !important;
+    margin-left: 3rem;
+    font-weight: 500;
+}
+.contact-me-desktop{
+    display: none !important;
+}
+
+#mobile-bottom-footer{
+    display: none;
+}
+
+#form-contact-me{
+    display: none;
+}
 /* Extra Small screens */
 @media screen and (max-width: 575px) {
 
@@ -367,8 +413,8 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     }
 
     #banner-wrapper{
-        margin-bottom: -22rem !important;
         flex-direction: column !important;
+        margin-bottom: -215px;
     }
     #headshot-wrap{
         position: relative;
@@ -394,7 +440,12 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         position: relative;
         
     }
- /* ***********************************************/
+
+    #cta{
+        margin-bottom: 0%;
+    }
+
+    /* ***********************************************/
     
 
  /* skills and bio */
@@ -418,7 +469,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 }
 
 #bio{
-    margin-top: 20px !important;
+    margin-top: 3rem !important;
     margin-bottom: 30px !important;
     text-align: center;
     color: var(--text-blue) !important;
@@ -453,7 +504,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     height: 80px;
 }
 .card-flex{
-    height: 250px;
+    padding: 20px;
 }
 
 
@@ -487,7 +538,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         align-self: flex-start;
     }
     #form-wrapper{
-        
+        padding: 0% !important;
     }
     
     form{
@@ -508,7 +559,26 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
         border-width: 10px;
         margin-right: 10px;
       }
+      #form-col{
+          background: transparent;
+          padding: 0;
+          margin-top: 3rem;
+          width: 80%;
+      }
+      .contact-me-desktop{
+          display: none;
+      }
 
+      #mobile-bottom-footer{
+        display: block;
+    }
+    #mobile-sprite{
+        display: none;
+    }
+
+    #contact-me-mobile{
+        display: none;
+    }
     /*******************************************************/
 
       
@@ -565,6 +635,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
     margin-top: 30vh;
     margin-bottom: -23rem;
     
+    
 }
 #banner{
     align-items: center !important;
@@ -585,6 +656,7 @@ input:active, input:focus, textarea:focus, textarea:active, .form{
 }
 #slogan-btn-wrap{
     align-items: center !important;
+    margin-top: 0rem;
 }
 
 
@@ -774,10 +846,27 @@ form{
 }
 
 
+
+#form-col{
+    right: 0;
+}
+
+
+
+
+
 /* Medium screens / Tablets */
 
 @media screen and (max-width: 991px) and (min-width: 768px){
 
+
+    .nav-item:hover{
+        border-bottom: none;
+    }
+    .navbar-collapse{
+        background-color: #3437CF;
+        padding: 15px;
+    }
 /* Banner */
 
 .mobile-v{
@@ -798,7 +887,7 @@ form{
         justify-content: center;
         height: 575px;
         margin-bottom: -21rem !important;
-        z-index: 10;
+        margin-top: 9rem;
     }
 
     #slogan{
@@ -807,9 +896,9 @@ form{
     }
     
     #logo{
-        margin-bottom: -12.8rem;
         z-index: 10;
         justify-content: flex-end;
+        margin-top: -5rem;
     }
 
     #logo img{
@@ -817,15 +906,19 @@ form{
     }
     #slogan-btn-wrap{
         justify-content: center !important;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
-    #slogan-btn-wrap, #headshot-wrap{
-        margin-bottom: -27rem;
-
+    #headshot-wrap{
+        margin-top: 3rem !important;
     }
 
     #headshot{
         min-width: 80%;
-        margin-top: 6rem !important;
+        
+    }
+    #slogan-wrap{
+        width: 52ch !important;
     }
 
  /* Skill / Bio */
@@ -908,7 +1001,7 @@ label, textarea{
 }
 
 #copyright{
-    margin-top: 9rem;
+    margin-top: 2.6rem;
     font-size: .8rem;
     text-align: center;
 }
@@ -927,6 +1020,7 @@ form{
     width: 80%;
     padding: 10px;
     z-index: 10;
+    padding-left: 3rem;
 }
 #form-col{
     right: -30px;
@@ -942,6 +1036,12 @@ form{
 }
     
 
+#form-wrapper{
+    margin-top: 6rem;
+
+}
+#form-col{
+    background:none;
 }
 }
 
@@ -949,12 +1049,39 @@ form{
 
 
 /******************************************************/ 
-b
 
 /**********************************************/
 /*large screens / laptops and small desktops */
 
-@media screen and (max-width: 1200px){
-    
+
+
+
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    #logo{
+        width: 200px;
+    }
+    #slogan{
+        text-align: right;
+        font-size: 40px;
+    }
+    #banner-wrapper{
+        margin-top: -5rem;
+    }
+    #headshot-wrap{
+        margin-top: 6rem !important;
+    }
+    #slogan-btn-wrap{
+        margin-top: 18rem;
+    }
+
+    #skill-bio{
+        margin-top: 24rem !important;
+    }
 }
+
+@media screen and {
+    
 }

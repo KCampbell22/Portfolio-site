@@ -49,7 +49,13 @@
               <a class="nav-link text-white" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Pricing</a>
+              <a class="nav-link text-white" href="#footer">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#bio">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#prj-wrap">Projects</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -60,16 +66,16 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Blog
               </a>
               <ul
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a target="_blank" class="dropdown-item" href="https://kcampbelldev.hashnode.dev/">Blog Home</a></li>
+                <li><a target="_blank" class="dropdown-item" href="https://kcampbelldev.hashnode.dev/who-the-heck-am-i-and-why-web-development">Most Recent Article</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a target="_blank" target="_blank" class="dropdown-item" href="https://kcampbelldev.hashnode.dev/">Articles</a>
                 </li>
               </ul>
             </li>
@@ -87,11 +93,11 @@
               <img src="/images/logo.svg" alt="" />
             </div>
             <div id="slogan-btn-wrap" class="col-xxl-9 col-lg-9 col-md-9 col-12 d-flex flex-column justify-content-center align-items-end p-0">
-                <div class="col-md-10 col-12">
+                <div id="slogan-wrap" class="col-md-10 col-12">
                   <h1 class="mb-4" id="slogan">Your vision becoming reality</h2>
                 </div>
                 <div id="slogan-btn" class=" col-xxl-5 col-lg-5 col-md-7 d-flex col-sm-12 col-12 align-items-center justify-content-center">
-                  <button style="z-index: 100;" onclick="window.location.href='mailto:ksoup12@gmail.com?subject=Chat with me'" id="cta" href="mailto:ksoup12@gmail.com?subject=Chat with me!" class="btn btn-primary btn-lg"><a href="mailto:ksoup12@gmail.com?subject='Chat with me!'" style="text-decoration: none;">Chat with me!</a></button>
+                  <button  onclick="window.location.href='mailto:ksoup12@gmail.com?subject=Chat with me'" id="cta" href="mailto:ksoup12@gmail.com?subject=Chat with me!" class="btn btn-primary btn-lg"><a href="mailto:ksoup12@gmail.com?subject='Chat with me!'" style="text-decoration: none;">Chat with me!</a></button>
                 </div>
                  
 
@@ -138,64 +144,64 @@
 
     <div class="container-fluid">
       <div id="prj-wrap" class="row justify-content-around flex-wrap">
-        <div class="col-12 d-flex flex-sm-column align-items-center">
+        <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
           <div class="col-10 m-auto mt-5 d-flex justify-content-center" style="color: var(--text-blue); margin-top: 6rem !important;" id="project-tab">
           <h2>Projects</h2>
         </div>
-          <div class=" col-xx1-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex justify-content-center flex-column project-card align-items-center">
+          <div class=" col-xxl-3 col-lg-4 col-md-10 col-sm-10 col-10 d-flex justify-content-center flex-column project-card align-items-center">
             <div class="row">
-              <div class="col-12 d-flex flex-column justify-content-evenly card-flex">
-                <div class="col-12 text-center" id="project-title">
+              <div class="col-9 d-flex flex-column justify-content-evenly card-flex">
+                <div class="col-9 text-center" id="project-title">
                   <h2>Endurance+</h2>
                 </div>
-                <div class="col-12 d-flex align-items-center proj-img-wrapper">
+                <div class="col-9 d-flex align-items-center m-auto proj-img-wrapper">
                   <img id="proj-img" class="m-auto" src="/images/E+-removebg-preview.png" alt="">
                 </div>
-                <button id="proj-button" class="text-white">Learn More</button>
+                <div class="col-12 d-flex justify-content-center"><button id="proj-button" class="text-white">Learn More</button></div>
               </div>
             </div>
           </div>         
-        <div class="col-xx1-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column align-items-center">
-          <div class="col-10 d-flex justify-content-center align-items-lg-center flex-column project-card align-items-center">
+        <div class="col-xxl-3 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column align-items-center">
+          <div class="col-9 d-flex justify-content-center align-items-lg-center flex-column project-card align-items-center">
             <div class="row">
-              <div class="col-xxl-12 col-12 d-flex align-items-center flex-column justify-content-evenly card-flex">
-                <div class="col-12 text-center" id="project-title">
+              <div class="col-xxl-12 col-12 d-flex align-items-center m-auto flex-column justify-content-evenly card-flex">
+                <div class="col-9 text-center" id="project-title">
                   <h2>Apple Clone *Static only*</h2>
                 </div>
-                <div class="col-12 d-flex align-items-center proj-img-wrapper">
+                <div class="col-9 d-flex align-items-center m-auto proj-img-wrapper">
                   <img id="proj-img" class="m-auto" src="/images/apple-removebg-preview.png" alt="">
                 </div>
-                <button id="proj-button" class="text-white">Learn More</button>
+                <div class="col-12 d-flex justify-content-center"><button id="proj-button" class="text-white">Learn More</button></div>
               </div>
             </div>
           </div>         
         </div>
-        <div class="ccol-xx1-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column align-items-center">
-          <div class="col-10 d-flex justify-content-center flex-column project-card align-items-center">
+        <div class="ccol-xxl-3 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column align-items-center">
+          <div class="col-9 d-flex justify-content-center flex-column project-card align-items-center">
             <div class="row">
               <div class="col-12 d-flex flex-column align-items-center justify-content-evenly card-flex">
-                <div class="col-12 text-center" id="project-title">
+                <div class="col-9 text-center" id="project-title">
                   <h2>Newsweekly Clone</h2>
                 </div>
-                <div class="col-12 d-flex align-items-center proj-img-wrapper">
+                <div class="col-9 d-flex align-items-center m-auto m-auto proj-img-wrapper">
                   <img id="proj-img" class="m-auto" src="/images/nweek.png" alt="">
                 </div>
-                <button id="proj-button" class="text-white">Learn More</button>
+                <div class="col-12 d-flex justify-content-center"><button id="proj-button" class="text-white">Learn More</button></div>
               </div>
             </div>
           </div>         
         </div>
-        <div class="col-xx1-4 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column align-items-center">
-          <div class="col-10 d-flex justify-content-center align-items-center flex-column project-card align-items-center">
+        <div class="col-xxl-3 col-lg-4 col-md-10 col-sm-10 col-10 d-flex flex-column align-items-center">
+          <div class="col-9 d-flex justify-content-center align-items-center flex-column project-card align-items-center">
             <div class="row">
-              <div class="col-12 d-flex flex-column align-items-center justify-content-evenly card-flex">
-                <div class="col-12 text-center" id="project-title">
+              <div class="col-12 d-flex flex-column p-3 align-items-center justify-content-evenly card-flex">
+                <div class="col-9 text-center" id="project-title">
                   <h2>Airbnb Newsroom Clone+</h2>
                 </div>
-                <div class="col-12 d-flex align-items-center proj-img-wrapper">
+                <div class="col-9 d-flex align-items-center m-auto proj-img-wrapper">
                   <img id="proj-img" class="m-auto mb-3" src="/images/airbnb-logo.png" alt="">
                 </div>
-                <button id="proj-button" class="text-white">Learn More</button>
+                <div class="col-12 d-flex justify-content-center"><button id="proj-button" class="text-white">Learn More</button></div>
               </div>
             </div>
           </div>         
@@ -213,7 +219,7 @@
         <div class="row position-relative">
           <div class="col-6"><img src="/images/logo-removebg-preview 3.svg" class="position-absolute" id="logo-footer"  alt="logo background"></div>
           <div class="col-12 d-flex flex-column justify-content-center position-relative" id="footer">
-            <div class=" col-xxl-5 col-md-4 col-12">
+            <div id="mobile-sprite" class=" col-xxl-5 col-md-4 col-12">
               <div class="row" id="socials">
                 <div class="col-12 d-flex align-items-center flex-column">
                   <div id="sprite-row" class="row w-100 mt-4">
@@ -233,10 +239,10 @@
                   </div>
                   <div class="row w-100 mt-4">
                     <div class="col-12 w-100 mt-4">
-                      <div class="col-12 d-flex align-items-center">
+                      <div class="col-xxl-6 col-lg-6 ms-xxl-5 ms-sm-0 justify-content-center col-12 d-flex align-items-center">
                         <div class="col-4 me-3" style="width: 60px; height: 113px; background-color: var(--btn-orange);"></div>
-                        <div class="col-8">
-                          <h2 class="text-white text-center">Contact me</h2>
+                        <div id="contact-me-desktop" class="col-8">
+                          <h2  class="text-white text-center">Contact me</h2>
                         </div>
                       </div>
                       <h1 id="name-md-up" class="text-white name ">Kade Campbell</h1>
@@ -253,12 +259,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-xxl-12 col-md-7 col-12 position-relative d-flex flex-column align-items-center ps-4 justify-content-center position-relative" id="form-wrapper">
+            <div class="col-xxl-7 col-lg-7 col-md-7 col-12 position-relative d-flex flex-column align-items-center ps-4 justify-content-center position-relative" id="form-wrapper">
 
-              <div class="row desktop">
+              <div id="form-contact-me" class="row desktop">
                 <div class="col-12 d-flex flex-column justify-content-center mobile align-items-center position-relative">
-                  <div id="contact-bl" class="col-2 mt-5 mobile"></div>
-                  <h2 class="text-white text-center mb-3">Contact me</h2>
+                  <div id="contact-bl-desktp" class="col-2 mt-5 mobile"></div>
+                  <h2  class="text-white text-center mb-3 ">Contact me</h2>
                 </div>
               </div>
               <div id="form-col" class="position-relative col-11 col-md-12" >
@@ -288,13 +294,13 @@
                 </form>
               </div>
             </div>
-            <div class="row d-md-none">
+            <div id="mobile-bottom-footer">
               <div class="col-12 p-0 d-flex align-items-center flex-column">
-                <div id="contact-bl desktop" class="col-2 mt-5"></div>
-                <h2 class="text-white text-center desktop">Contact me</h2>
+                <div id="contact-bl" class="col-2 mt-5 display-none-mobile"></div>
+                <h2 id="contact-me-mobile" class="text-white text-center">Contact me</h2>
                 <h1 id="name-md-down" class="text-white name desktop">Kade Campbell</h1>
                 <div style="height: 2px; background-color: var(--btn-orange);" class="col-4"></div>
-                <div class="mb-4 mt-2 col-4 col-md-4 d-flex justify-content-evenly" id="sprite">
+                <div class="mb-4 mt-2 col-6 col-md-4 d-flex justify-content-evenly" id="sprite">
                   <a target="_blank" href="https://www.linkedin.com/in/kade-campbell-21a3601aa/"><i class="sprite-mobile sprite-mobile-A-linkedin"></i></a>
                   <a target="_blank" href="https://twitter.com/k_campbell15"><i class="sprite-mobile sprite-mobile-B-twitter"></i></a>
                   <a target="_blank" href="https://github.com/KCampbell22"><i class="sprite-mobile sprite-mobile-C-github"></i></a>
